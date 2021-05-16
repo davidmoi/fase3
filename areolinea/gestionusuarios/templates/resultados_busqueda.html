@@ -1,0 +1,21 @@
+<html>
+<body>
+
+<p><h1>Bitacora</h1></p>
+
+{% if datos %}
+    <p><h3>Los datos almacenados son:</h3></p><br>
+    <p>------Clase----Subtotal----Total----Descuento</p>
+
+    <ul>
+        {% for registro in datos %}
+        <li>
+            {{registro.clase}}&nbsp;-------- {{registro.subtotal}}&nbsp;------- {{registro.total}}&nbsp;------ {{registro.descuento}} 
+        </li>
+        {% endfor %}
+    </ul>
+{% else %}
+    <p><h3>La bitacora está vacia</h3></p>
+{% endif %}
+</body>
+</html>

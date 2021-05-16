@@ -1,0 +1,31 @@
+<html>
+<body>
+    <title>Tarea Segundo Parcial en DJango</title>
+    <h2>
+    Progrmar Cita Medica
+    </h2>
+
+        <form action>
+        <p>Ingrese datos de la cita</p>
+
+        <p>Paciente: <input type="text" name="paciente"></p>
+        <p>Fecha: <input type="text" name="fecha"></p>
+        <p>Dia : <input type="text" name="dia"></p>
+        <p>Hora: <input type="text" name="hora"></p>
+
+        <input type="button" value="Guardar"> <input type="button" value="Mostrar Datos">
+         </form>
+
+    <p><strong>Los datos almacenados son:</strong></p>
+    <p>
+        {% for x in listas %}
+        <p>{{x}}</p>  
+       
+        {% endfor %}
+    </p>
+
+    <input type="button" value="Limpiar">
+    <input type="button" value="Borrar">
+    <p>La fecha y hora actual es: {{momento}}</p>
+</body>
+</html>

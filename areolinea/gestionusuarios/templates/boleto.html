@@ -1,0 +1,39 @@
+<html>
+    <body>
+    <h1 >
+    Bienvenidos a Aerolineas USAC
+    </h1>
+
+    <h2> Seleccione la clase en la que viaja</h2>
+
+    <form action="/guardar/" method="GET">
+
+    <label for="Clase">Clase:</label>
+    <input type="number" placeholder="Clase de vuelo" maxlength="2" name="clase" id="comida" min="1" max="3"><br><br>
+
+    <h2>Servicios disponibles</h2> 
+
+    <label>Servicio </label>
+    
+    <br>
+    
+        <label for="comida">Comida:</label>
+        <input type="number" placeholder="Cantidad del servicio" maxlength="2" name="comida" id="comida" min="0"><br>
+        <label for="bebida">Bebida: </label>
+        <input type="number" placeholder="Cantidad del servicio" maxlength="2" name="bebida" id="bebida" min="0"><br>
+        <label for="pelicula">Pelicula:</label>
+        <input type="number" placeholder="Cantidad del servicio" maxlength="2" name="pelicula" id="pelicula" min="0"><br>  
+
+        <br>
+
+        <input type="submit" value="Calcular"> 
+        
+    </form>
+        <form action="/borrado/"><input type="submit" value="Borrar Bitacora"></form>
+        <form action="/mostrar/"><input type="submit" value="Mostrar Bitacora"></form>
+        <form action="/sesion/"><input type="submit" value="Cerrar sesion"></form>
+   
+
+
+    </body>
+    </html>
